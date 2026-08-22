@@ -1,0 +1,710 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8fc;
+    color: #1f2937;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 72px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid #e8edf3;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #0ea5e9;
+}
+
+.logo span {
+    color: #111827;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #0ea5e9;
+}
+
+.nav-user {
+    background: #eef8ff;
+    color: #0788c8;
+
+    padding: 9px 15px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.profile-hero {
+    height: 250px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(0, 145, 210, 0.92),
+            rgba(35, 190, 170, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 86%;
+    max-width: 1150px;
+    margin: auto;
+
+    color: white;
+}
+
+.welcome {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.hero-content p:last-child {
+    font-size: 16px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 86%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+
+/* =========================
+   INFORMATION CARD
+========================= */
+
+.information-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid #edf1f5;
+}
+
+.card-heading,
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.card-heading span,
+.section-title span {
+    color: #0ea5e9;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+.card-heading h2,
+.section-title h2 {
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.edit-btn {
+    border: none;
+
+    background: #eef8ff;
+
+    color: #0788c8;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    background: #0ea5e9;
+    color: white;
+}
+
+
+/* =========================
+   INFO GRID
+========================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.info-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    background: #eef8ff;
+    transform: translateX(3px);
+}
+
+.info-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 9px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.info-box label {
+    display: block;
+
+    color: #999;
+
+    font-size: 11px;
+
+    margin-bottom: 4px;
+}
+
+.info-box p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.statistics {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.stat-card {
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    border: 1px solid #edf1f5;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 23px;
+}
+
+.blue {
+    background: #e8f7ff;
+}
+
+.pink {
+    background: #fff0f4;
+}
+
+.yellow {
+    background: #fff8dd;
+}
+
+.green {
+    background: #e9fbf1;
+}
+
+.stat-card h2 {
+    font-size: 23px;
+    margin-bottom: 3px;
+}
+
+.stat-card p {
+    font-size: 12px;
+    color: #888;
+}
+
+
+/* =========================
+   TRAVEL SECTION
+========================= */
+
+.travel-section {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.upcoming-card,
+.favourite-card,
+.activity-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #edf1f5;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.section-title a {
+    color: #0ea5e9;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   TRIP
+========================= */
+
+.trip {
+    display: flex;
+
+    background: #f8fafc;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+}
+
+.trip img {
+    width: 42%;
+
+    object-fit: cover;
+
+    min-height: 220px;
+}
+
+.trip-info {
+    padding: 25px;
+}
+
+.confirmed {
+    background: #e6f8ee;
+
+    color: #16934e;
+
+    font-size: 11px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+}
+
+.trip-info h2 {
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+.trip-info p {
+    color: #777;
+
+    font-size: 13px;
+
+    margin: 8px 0;
+}
+
+.details-btn {
+    margin-top: 12px;
+
+    border: none;
+
+    background: #0ea5e9;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background: #0788c8;
+}
+
+
+/* =========================
+   FAVOURITE
+========================= */
+
+.heart {
+    color: #f04468;
+    font-size: 22px;
+}
+
+.favourite-card {
+    padding-bottom: 20px;
+}
+
+.favourite-card > img {
+    width: 100%;
+
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+.favourite-info {
+    padding-top: 15px;
+
+    position: relative;
+}
+
+.favourite-info h2 {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.favourite-info p {
+    color: #888;
+
+    font-size: 13px;
+}
+
+.rating {
+    position: absolute;
+
+    right: 0;
+
+    top: 17px;
+
+    background: #fff8df;
+
+    color: #d59b00;
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   ACTIVITY
+========================= */
+
+.activity-card {
+    margin-top: 30px;
+}
+
+.activity {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-top: 1px solid #eee;
+}
+
+.activity-icon {
+    width: 42px;
+    height: 42px;
+
+    background: #eef8ff;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-text {
+    flex: 1;
+}
+
+.activity-text h3 {
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.activity-text p {
+    font-size: 12px;
+
+    color: #888;
+}
+
+.date {
+    color: #aaa;
+    font-size: 11px;
+}
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+.logout {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.logout button {
+    border: 1px solid #f04444;
+
+    background: white;
+
+    color: #e53935;
+
+    padding: 11px 25px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.logout button:hover {
+    background: #e53935;
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+.footer-logo {
+    font-size: 23px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #9ca3af;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.copyright {
+    border-top: 1px solid #374151;
+
+    padding-top: 18px;
+
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .travel-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .profile-hero {
+        height: 220px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+    .trip {
+        flex-direction: column;
+    }
+
+    .trip img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .card-heading h2,
+    .section-title h2 {
+        font-size: 19px;
+    }
+
+    .nav-user {
+        display: none;
+    }
+}
