@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobeTrotter | Plan further</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard" aria-label="GlobeTrotter home"><span class="brand-mark">G</span><span>globe<span>trotter</span></span></a>
+      <div class="profile-chip"><div class="avatar avatar-photo"></div><div><strong>Alex Morgan</strong><small>Explorer level 04</small></div><i data-lucide="chevron-down"></i></div>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <p class="nav-label">Workspace</p>
+        <button class="nav-item active" data-view="dashboard"><i data-lucide="layout-dashboard"></i>Overview</button>
+        <button class="nav-item" data-view="trips"><i data-lucide="map"></i>My trips <span class="nav-count">3</span></button>
+        <button class="nav-item" data-view="discover"><i data-lucide="compass"></i>Discover</button>
+        <button class="nav-item" data-view="calendar"><i data-lucide="calendar-days"></i>Calendar</button>
+        <p class="nav-label second-label">Manage</p>
+        <button class="nav-item" data-view="budget"><i data-lucide="wallet-cards"></i>Budget</button>
+        <button class="nav-item" data-view="shared"><i data-lucide="share-2"></i>Shared with me</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="side-tip"><i data-lucide="sparkles"></i><strong>Make room for wonder.</strong><span>Every great journey starts with a loose idea.</span><button class="text-button">Explore inspiration <i data-lucide="arrow-up-right"></i></button></div><button class="nav-item"><i data-lucide="settings-2"></i>Settings</button><button class="nav-item"><i data-lucide="help-circle"></i>Help center</button></div>
+    </aside>
+    <main class="main-content" id="dashboard">
+      <header class="topbar"><button class="mobile-menu" aria-label="Open menu"><i data-lucide="menu"></i></button><div class="breadcrumbs"><span>Workspace</span><i data-lucide="chevron-right"></i><strong>Overview</strong></div><div class="top-actions"><button class="icon-button" aria-label="Search"><i data-lucide="search"></i></button><button class="icon-button notification" aria-label="Notifications"><i data-lucide="bell"></i><b></b></button><button class="share-button"><i data-lucide="send"></i>Share profile</button></div></header>
+      <div class="content-wrap">
+        <section class="welcome-row"><div><p class="eyebrow">Saturday, 22 August 2026</p><h1>Good morning, Alex<span class="serif-italic">.</span></h1><p class="lede">Your next chapter is looking beautifully unplanned.</p></div><button class="primary-button" id="newTripButton"><i data-lucide="plus"></i>Plan a new trip</button></section>
+        <section class="hero-grid"><article class="next-trip"><div class="trip-image" role="img" aria-label="Amalfi coast coastline"></div><div class="trip-overlay"><span class="status-pill"><span class="dot"></span>Up next · 42 days</span><p class="trip-kicker">Your next escape</p><h2>La dolce vita</h2><div class="trip-meta"><span><i data-lucide="map-pin"></i>Amalfi Coast, Italy</span><span><i data-lucide="calendar"></i>03 — 11 Oct 2026</span></div><button class="light-button" id="openItinerary">Open itinerary <i data-lucide="arrow-up-right"></i></button></div></article><article class="progress-card"><div class="section-heading"><div><p class="eyebrow">Trip progress</p><h3>La dolce vita</h3></div><span class="more-icon">•••</span></div><div class="progress-ring"><div><strong>68<span>%</span></strong><small>planned</small></div></div><div class="progress-list"><div><span class="progress-icon mint"><i data-lucide="map-pin"></i></span><span>Stops added</span><strong>4 / 5</strong></div><div><span class="progress-icon peach"><i data-lucide="utensils"></i></span><span>Experiences</span><strong>12</strong></div><div><span class="progress-icon yellow"><i data-lucide="wallet"></i></span><span>Budget set</span><strong>€2,400</strong></div></div><button class="outline-button">Continue planning <i data-lucide="arrow-right"></i></button></article></section>
+        <section class="section-block"><div class="section-heading"><div><p class="eyebrow">Keep exploring</p><h2>Made for your map</h2></div><button class="link-button">View all <i data-lucide="arrow-up-right"></i></button></div><div class="destination-grid"><article class="destination-card"><div class="destination-img img-tokyo"></div><div class="destination-info"><div><h3>Tokyo, Japan</h3><p>City · Food · Culture</p></div><span class="save-button"><i data-lucide="bookmark"></i></span></div><div class="destination-footer"><span>From €780</span><span class="rating"><i data-lucide="star"></i> 4.9</span></div></article><article class="destination-card"><div class="destination-img img-lisbon"></div><div class="destination-info"><div><h3>Lisbon, Portugal</h3><p>Coast · Slow travel</p></div><span class="save-button saved"><i data-lucide="bookmark"></i></span></div><div class="destination-footer"><span>From €420</span><span class="rating"><i data-lucide="star"></i> 4.8</span></div></article><article class="destination-card"><div class="destination-img img-marrakech"></div><div class="destination-info"><div><h3>Marrakech, Morocco</h3><p>Design · Markets</p></div><span class="save-button"><i data-lucide="bookmark"></i></span></div><div class="destination-footer"><span>From €510</span><span class="rating"><i data-lucide="star"></i> 4.7</span></div></article></div></section>
+        <section class="lower-grid"><article class="recent-trips"><div class="section-heading"><div><p class="eyebrow">Your journeys</p><h2>Recent trips</h2></div><button class="link-button" data-view="trips">See all <i data-lucide="arrow-up-right"></i></button></div><div class="trip-list"><div class="mini-trip"><div class="mini-img mini-bali"></div><div class="mini-copy"><strong>Island notes</strong><span>Bali, Indonesia · May 2026</span></div><span class="trip-state complete">Completed</span></div><div class="mini-trip"><div class="mini-img mini-nyc"></div><div class="mini-copy"><strong>Concrete jungle</strong><span>New York, USA · Feb 2026</span></div><span class="trip-state complete">Completed</span></div></div></article><article class="budget-card"><div class="section-heading"><div><p class="eyebrow">La dolce vita</p><h2>Trip budget</h2></div><button class="more-icon">•••</button></div><div class="budget-total"><strong>€1,680</strong><span>of €2,400 estimated</span></div><div class="budget-bar"><span></span></div><div class="budget-breakdown"><span><i class="transport"></i>Transport <b>€520</b></span><span><i class="stay"></i>Stay <b>€780</b></span><span><i class="activities"></i>Activities <b>€380</b></span></div></article></section>
+      </div>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="tripModal" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="closeModal" aria-label="Close"><i data-lucide="x"></i></button><p class="eyebrow">A blank page, in the best way</p><h2 id="modalTitle">Plan a new trip</h2><p class="modal-intro">Give this journey a name. You can fill in the details as the idea takes shape.</p><form id="tripForm"><label>Trip name<input id="tripName" name="name" required placeholder="e.g. A week in the wild"></label><div class="form-row"><label>Start date<input type="date" name="start_date" required value="2026-10-03"></label><label>End date<input type="date" name="end_date" required value="2026-10-11"></label></div><label>Where are you going?<input name="destination" placeholder="Search destinations"></label><button class="primary-button full-width" type="submit">Create trip <i data-lucide="arrow-right"></i></button></form></div></div>
+  <div class="toast" id="toast"><i data-lucide="check-circle-2"></i><span>Trip created. Let’s make it memorable.</span></div>
+  <a class="logout-link" href="logout.php">Log out</a>
+  <script src="app.js"></script>
+</body>
+</html>
